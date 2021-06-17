@@ -1,0 +1,23 @@
+<?php
+return [
+    "tasklist" => "Task List",
+    "task" => "Task",
+    "nothing" => "Nothing tasks",
+    "add" => "Add",
+    "delete" => "Delete",
+    "name" => "Task Name",
+    "current" => "Current Task",
+    "picked" => "Picked",
+    "exist" => "Task has exist",
+    "required" => "Task name is require",
+    "home" => "Home",
+    "feature" => "Feature",
+    "pricing" => "Pricing",
+    "change" => "Change Language",
+    "deleted" => "Task has been delete",
+    "added" => "Task add success",
+    "notfound" => "Not found this task",
+    "fail_added" => "Add task has found",
+    "no_permission" => "You don't have permission",
+    "created_by" => "Created by",
+];
