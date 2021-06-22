@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TaskController;
+use App\Http\Controllers\LocaleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => 'locale'], function() {
+    Route::get('change-locale/{language}', LocaleController::class)->name('locale.change');
+    Route::resource('tasks', TaskController::class);
 });
+
+Auth::routes();
+
